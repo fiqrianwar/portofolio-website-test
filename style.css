@@ -1,0 +1,229 @@
+:root{
+    --color-blue-cermati        :  ​rgb(0, 123, 193);
+    --color-darkBlue-cermati    : #004a75;
+    --color-orange-cermarti     : #ff8000;
+    --color-darkOrange-cermati  : #cc6600;
+    --color-smokeGrey-cermati   : #e5e5e5;
+}
+
+    @media only screen and (max-width: 720px)  {
+        
+        /* notification panel card */
+            .notification-panel{
+                margin-top: -5%;
+            }
+            .card-notification-panel{
+                width: 60% !important;
+                border: unset;
+            }
+
+            .notification-panel-card{
+                display: unset !important;
+                justify-content: start !important;
+            }
+            .notification-panel-card button{
+                width: 90% !important;
+            }
+            .notification-panel-card p{
+                text-align: start !important;
+            }
+
+            .card-newletter-panel{
+                width: 60% !important;
+                right: 0;
+            }
+
+            .form-newletter-panel {
+                display: unset !important;
+            }
+            .form-newletter-panel input,button{
+                width: 100% !important;
+                margin-top: 4%;
+            }
+            .card-animation-panel{
+                margin-top: -15em;
+            }
+
+            .logo{
+                margin-top: 5%;
+            }
+
+            
+        }
+
+        @media screen and (max-width: 500px) 
+        {
+            .container-card-highlight-panel{
+                display: block;
+            }
+            .caption-card {
+                margin-top: unset !important;
+            }
+            .card-caption h5,h6,p{
+                
+                text-align : start !important;
+            }
+        }
+
+
+
+    /* notification panel */
+
+    
+
+    .notification-panel span{
+        color: darkblue;
+        font-weight: bolder;
+    }
+
+    .container-card-highlight-panel .card{
+        margin-bottom: 2%;
+    }
+    /* .notification-panel .span-inline {
+        color: black;font-weight: 400;text-align: left;
+    } */
+
+    .notification-panel-card{
+        display: flex; 
+        justify-content: center;
+    }
+
+    .notification-panel-card p {
+        color: black;
+        margin: 12px; 
+    }
+    .notification-panel-card button {
+        margin: 1em;
+    }
+
+    
+
+    /* header-hero-card */
+    .header-hero-card{
+        height: 35em;
+        box-shadow: inset 0 0 0 1000px rgba(0, 31, 117, 0.493);
+
+        background-size: cover;
+        background-image: url('./assets/work-desk__dustin-lee[147].jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .header-hero-shot{
+        margin-top: 5%
+    }
+
+    .card-caption h5,h6,p{
+        color: white;
+        text-align : center;
+    }
+    .card-caption h5{
+        color: rgb(206, 206, 206);
+        font-size: 24px; 
+        font-weight:400; 
+    }
+    .card-caption h6{
+        font-size: 22px;
+    }
+    .caption-card p {
+        color: rgb(206, 206, 206);
+        font-size: 15px; 
+    }
+
+    .caption-card .card{
+        border: unset;
+        background-color: unset;
+    }
+    .button-caption{
+        display: flex; 
+        justify-content: center;
+    }
+    .caption-card .card button{
+        color: white;
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 13px;
+        font-weight: 600;
+        padding-left: 20px;
+        border-radius: unset;
+        padding-right: 20px;
+        
+    }
+    .caption-card .card button:hover{
+        color: darkblue;
+        background-color: var(--color-smokeGrey-cermati);
+    }
+
+    .container-card-highlight-panel .card-body{
+        background-color: var(--color-smokeGrey-cermati);
+    }
+
+    /* Highlights Panel */
+
+    .highlight-panel .card{
+        margin: 12px;
+    }
+
+    .first-row-card p{
+        color: black; 
+        font-size: 15px;
+        text-align: start; 
+        font-weight: 400;
+    }
+
+
+
+    /* card footer */
+    .card-footer{
+        width: 100%; 
+        background-color: rgb(13, 13, 46); 
+        border-radius: unset;
+    }
+    .card-footer p{
+        color: rgb(190, 190, 190);
+        margin: unset; 
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .card-newletter-panel{
+        width: 38rem; 
+        bottom: 0;
+        z-index: 1; 
+        position: absolute;
+        background-color: rgba(0, 122, 193, 0.849);
+    }
+    
+
+    /* animation */
+    .card-animation-panel{
+        -webkit-animation: textOut 1.0s forwards;
+            animation: textOut 1.0s forwards;
+            
+        
+    }
+
+    .animation-header{
+        -webkit-animation: hero 1.0s forwards;
+            animation: hero 1.0s forwards;
+    }
+
+    .card-letter-panel{
+        -webkit-animation: bottomContent 1.0s forwards;
+            animation: bottomContent 1.0s forwards;
+    }
+
+    @keyframes bottomContent {
+        70% { bottom: -14em; }
+        100% { left: -50em; }
+    }
+
+    @keyframes textOut {
+        100% { top: -5em; }
+    }
+
+    
+    @keyframes hero {
+    100%{
+        margin-top: unset;
+    }
+    }
